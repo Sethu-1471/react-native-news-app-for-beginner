@@ -1,0 +1,37 @@
+Lorem ipsum dolor sit amet consectetur adipisi
+
+
+
+
+import React from 'react';
+import SearchBar from './app/components/SearchBar';
+import Screen from './app/components/Screen';
+import BlockCard from './app/components/BlockCard';
+import FeaturedNews from './app/components/FeaturedNews';
+import SmallCard from './app/components/SmallCard'
+import BreakingNews from './app/components/BreakingNews';
+import data from './fakeData.json'
+import TechNews from './app/components/TechNews';
+import FlatCard from './app/components/FlatCard';
+import PoliticalNews from './app/components/PoliticalNews';
+
+export default function App() {
+  return (
+    <Screen>
+      <SearchBar />
+      <FeaturedNews item={} />
+      <BreakingNews data={data} />
+      <TechNews data={data} />
+      <PoliticalNews data={data} />
+    </Screen>  
+  )
+}
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
